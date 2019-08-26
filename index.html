@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>
+          VM Information
+      </title>
+      <style>
+      
+            body{
+                background-color: #7b7b7b;
+                
+            }
+            h1{
+                color: white;
+                text-align: center;
+                padding-top:20px; 
+                padding-bottom:20px;
+                font-family: Tahoma ;
+            }
+            #box{
+                background-color:#5376bb;
+                height: auto;
+                position: fixed;
+                vertical-align: center;
+                left: 50%;              
+                width: 700px;
+                margin-left:-350px; 
+                margin-top:30px;
+                border-radius: 50px 20px;
+                border-style:dotted; 
+                border-color: white;
+            }
+
+            #content{
+                padding-top: 10px;
+                padding-right: 50px;
+                padding-left: 50px;
+                padding-bottom: 50px;
+            }
+            #text{
+                background-color: #7b7b7b;
+                text-align: center;
+                color: #b5b5b5;
+            }
+            #rightside{
+                text-align: right;
+                float: right;
+            }
+            #leftside{
+                text-align: left;
+                float: left;
+            }
+            h2 , h3 , p{
+                font-family: Tahoma ;
+                color: white;
+                display: inline;
+            }
+            table{
+                margin-top:5%; 
+                color: white;
+                font-family: Tahoma 
+            }
+
+
+      </style>
+   </head>
+   <body>
+       <div id="box">
+        <h1>
+            VM Information
+        </h1>   
+       
+         <div id="content">  
+                <hr/>
+                <h3 id="leftside">
+                 User : {{user}}
+                </h3>  
+                <h3 id="rightside">Date : {{date}}</h3>
+                <hr style="clear: both;"/>
+            
+            <table>
+                <tr>
+                    <td><strong>Name :</strong></td>
+                    <td>&emsp;&emsp;&emsp;{{name}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Hostname :</strong></td>
+                    <td>&emsp;&emsp;&emsp;{{hostname}}</td>
+                </tr>
+                <tr>
+                    <td><strong>IP Address :</strong></td>
+                    <td>&emsp;&emsp;&emsp;{{ipAddress}}</td>
+                </tr>
+            </table>
+         </div>
+        
+       </div>
+       
+   </body>
+</html> 
